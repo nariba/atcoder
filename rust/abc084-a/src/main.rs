@@ -1,7 +1,4 @@
-extern crate regex;
-
 use std::io;
-use regex::Regex;
 
 fn read_line() -> String {
     let mut s = String::new();
@@ -37,13 +34,6 @@ fn digit_sum(n: i64) -> i64 {
 }
 
 fn main() {
-    from_line!(a: i64, b: i64);
-    from_line!(s: &str);
-
-    println!("a:{} b:{} s:{}", a, b, s);
-    
-    let re = Regex::new(r"([0-9])(\d)").unwrap();
-    let caps = re.captures(s).unwrap();
-    println!("{} before {}", caps.at(1).unwrap(), caps.at(2).unwrap());
-    
+    from_line!(m: i64);
+    println!("{}", 48 - m);
 }
