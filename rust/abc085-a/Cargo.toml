@@ -1,0 +1,6 @@
+[package]
+name = "abc085-a"
+version = "0.1.0"
+authors = ["nariba <nariba@users.noreply.github.com>"]
+
+[dependencies]
